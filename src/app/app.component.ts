@@ -6,26 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent{
-  
-  people=[{
-    name:"Samarth" 
-    ,age:28},
-    {name:"Bob",
-    age:34},
-    {name:"Alice"
-    ,age:27
-  }];
-  name:String ="";
-  age: number;
-  
- 
-  update(name,age){
-   this.people.push({"name":name,
-                "age":age});
+  x: string ="Please enter name";
+  name: string ;
+  execute(){
+    this.x = this.name;
 
-  
-  this.name ="";
-  this.age= undefined;
   }
- 
 }
